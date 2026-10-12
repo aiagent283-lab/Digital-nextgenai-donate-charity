@@ -4,6 +4,8 @@ import { useState, type ReactNode } from 'react';
 import { ArrowUpRight, ArrowRight, BrainCircuit, Code2, ChartNoAxesCombined, Layers3, Orbit, GraduationCap, Check, LockKeyhole, CreditCard, Landmark, Cloud, Sparkles } from 'lucide-react';
 import { siPython, siTensorflow, siReact, siNodedotjs, siMongodb, siDocker } from 'simple-icons';
 import neuralImage from '@/assets/neural-network.jpg';
+import upiQrAsset from '@/assets/upi-qr.jpg.asset.json';
+const upiQr = upiQrAsset.url;
 import { Button } from '@/components/ui/button';
 import { NeuralField } from '@/components/neural-field';
 import { NextgenBrand } from '@/components/nextgen-brand';
