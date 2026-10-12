@@ -250,6 +250,10 @@ h2 { font-size: 32px; font-weight: 500; line-height: 1.2; }
 .pricing-card li > span { color: var(--cyan); padding-top: 2px; }
 .pay-button { width: 100%; height: 47px; justify-content: space-between; padding-inline: 22px; animation: button-pulse 4s ease-in-out infinite; }
 .click-ripple { position: absolute; width: 100px; height: 100px; border-radius: 50%; background: var(--foreground); pointer-events: none; left: calc(50% - 50px); }
+.qr-payment { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 24px; }
+.qr-frame { display: block; padding: 7px; border-radius: 10px; background: #fff; box-shadow: 0 0 0 1px oklch(0.55 0.2 290 / 35%), 0 0 26px oklch(0.5 0.2 290 / 22%); }
+.qr-frame img { display: block; width: 148px; height: 148px; border-radius: 5px; }
+.qr-payment p { margin: 0; color: var(--muted-foreground); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; }
 .secure-payment { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 16px; color: var(--muted-foreground); font-size: 9px; }
 .payment-methods { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 19px; opacity: .6; font-size: 9px; }
 .payment-methods > span { display: flex; align-items: center; gap: 5px; }

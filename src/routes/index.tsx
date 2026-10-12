@@ -4,6 +4,8 @@ import { useState, type ReactNode } from 'react';
 import { ArrowUpRight, ArrowRight, BrainCircuit, Code2, ChartNoAxesCombined, Layers3, Orbit, GraduationCap, Check, LockKeyhole, CreditCard, Landmark, Cloud, Sparkles } from 'lucide-react';
 import { siPython, siTensorflow, siReact, siNodedotjs, siMongodb, siDocker } from 'simple-icons';
 import neuralImage from '@/assets/neural-network.jpg';
+import upiQrAsset from '@/assets/upi-qr.jpg.asset.json';
+const upiQr = upiQrAsset.url;
 import { Button } from '@/components/ui/button';
 import { NeuralField } from '@/components/neural-field';
 import { NextgenBrand } from '@/components/nextgen-brand';
@@ -94,6 +96,10 @@ function Index() {
         <div className="price"><span className="currency">₹</span><span>199</span><span className="price-period">/month</span></div><div className="price-divider" />
         <ul>{benefits.map(benefit => <li key={benefit}><span><Check size={14} /></span>{benefit}</li>)}</ul>
         <Button variant="subscribe" className="pay-button" onClick={() => setRipple(value => value + 1)}>Subscribe Now <ArrowRight />{ripple > 0 && !reduced && <motion.span key={ripple} className="click-ripple" initial={{ scale: 0, opacity: 0.3 }} animate={{ scale: 5, opacity: 0 }} transition={{ duration: 0.65 }} />}</Button>
+        <div className="qr-payment">
+          <span className="qr-frame"><img src={upiQr} alt="UPI QR code to pay NextGen AI ₹199 per month" width={148} height={148} loading="lazy" /></span>
+          <p>Scan to pay with any UPI app</p>
+        </div>
         <p className="secure-payment"><LockKeyhole size={12} />100% Secure Payment · Powered by Razorpay</p>
         <div className="payment-methods"><span className="upi-mark">UPI<span>⏵</span></span><span><CreditCard size={17} /> Cards</span><span><Landmark size={16} /> Net banking</span></div>
       </div></Reveal></section>
