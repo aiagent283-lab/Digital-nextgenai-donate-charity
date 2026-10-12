@@ -73,7 +73,7 @@ function Index() {
       <section id="what-we-do" className="page-section page-container">
         <Reveal className="section-heading"><span className="section-index">01 /</span><h2>What We <span className="gradient-text">Do</span></h2><span className="heading-rule" /></Reveal>
         <div className="activity-grid">{activities.map(({ name, icon: Icon }, i) => <Reveal delay={i * 0.06} key={name}>
-          <motion.div className="activity-card glass-card" whileHover={reduced ? undefined : { rotateX: -3, rotateY: 3, y: -5 }} transition={{ duration: 0.25 }}>
+          <motion.div className="activity-card glass-card" whileHover={reduced ? {} : { rotateX: -3, rotateY: 3, y: -5 }} transition={{ duration: 0.25 }}>
             <span className="activity-icon"><Icon strokeWidth={1.5} /></span><span className="activity-number">0{i + 1}</span>
             <h3>{name}</h3><ArrowUpRight className="activity-arrow" size={18} />
           </motion.div>
