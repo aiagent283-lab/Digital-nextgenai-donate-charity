@@ -1,5 +1,6 @@
 # NextGen AI
 
+- [x] Replace monthly subscription with ₹199 donation; Donate buttons reveal the supplied QR.
 - [x] Stage 1: Page design, mobile layout, and animations; paused for review.
 - [ ] Stage 2: Checkout form and validation — awaiting stage 1 review.
 - [ ] Stage 3: Cloud, Razorpay subscription creation and payment verification, receipt and email — awaiting stage 1 review and payment configuration.
